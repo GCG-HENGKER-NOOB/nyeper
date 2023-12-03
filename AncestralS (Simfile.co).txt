@@ -1,0 +1,2665 @@
+allow-insecure: true
+global-client-fingerprint: ios
+user-level: 8
+mux :
+  enable: true
+concurrency: 8
+alpn: http/1.1
+log-level: silent
+external-ui: yacd-gh-pages
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: true
+mode: rule
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+    - https://one.one.one.one/dns-query
+    - 1.0.0.1
+    - 1.1.1.1
+    - 118.98.44.10
+    - 118.98.44.100
+  fallback:
+    - https://one.one.one.one/dns-query
+    - 1.0.0.1
+    - 1.1.1.1
+    - 118.98.44.10
+    - 118.98.44.100
+  default-nameserver:
+    - 1.0.0.1
+    - 1.1.1.1
+    - 118.98.44.100
+    - 118.98.44.100
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://1.0.0.1:853
+    - tcp://1.1.1.1:853
+experimental:
+  interface-name: en0
+proxies:
+  - name: 🇮🇩ID conf+iflix1
+    server: 104.18.12.78
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix2
+    server: 104.18.30.9
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix3
+    server: 104.26.4.192
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix4
+    server: 170.114.45.0
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix5
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: teams.live.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix6
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: store.zoom.us
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix7
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: talkgadget.google.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix8
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: meetings.googleapis.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix9
+    server: 43.156.222.16
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID conf+iflix10
+    server: 43.156.222.203
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix1
+    server: 104.18.12.78
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix2
+    server: 104.18.30.9
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix3
+    server: 104.26.4.192
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix4
+    server: 170.114.45.0
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix5
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: teams.live.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix6
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: store.zoom.us
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix7
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: talkgadget.google.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix8
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: meetings.googleapis.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix9
+    server: 43.156.222.16
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG conf+iflix10
+    server: 43.156.222.203
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision1
+    server: 104.21.235.171
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision2
+    server: 104.18.226.52
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision4
+    server: 104.21.73.208
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision5
+    server: 172.67.192.40
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision6
+    server: 172.64.199.18
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision7
+    server: 104.18.20.94
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision8
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision9
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision10
+    server: 104.22.62.150
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision11
+    server: 172.67.8.9
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision12
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.facebook.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision13
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.google.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision14
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: shopee.co.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision15
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision16
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: googleads.g.doubleclick.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision17
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: certify.alexametrics.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xlvision18
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pagead2.googlesyndication.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision1
+    server: 104.21.235.171
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision2
+    server: 104.18.226.52
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision3
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision4
+    server: 104.21.73.208
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision5
+    server: 172.67.192.40
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision6
+    server: 172.64.199.18
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision7
+    server: 104.18.20.94
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision8
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision9
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision10
+    server: 104.22.62.150
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision11
+    server: 172.67.8.9
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision12
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.facebook.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision13
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.google.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision14
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: shopee.co.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision15
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision16
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: googleads.g.doubleclick.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision17
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: certify.alexametrics.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xlvision18
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pagead2.googlesyndication.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped1
+    server: 104.18.20.226
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped2
+    server: 104.22.24.131
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped3
+    server: 104.26.7.171
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped4
+    server: 104.18.25.139
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID tselilped6
+    server: 104.16.86.20
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped1
+    server: 104.18.20.226
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped2
+    server: 104.22.24.131
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped3
+    server: 104.26.7.171
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped4
+    server: 104.18.25.139
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG tselilped6
+    server: 104.16.86.20
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame1
+    server: 172.67.6.144
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame2
+    server: 104.16.108.96
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame3
+    server: 162.159.136.54
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame4
+    server: 104.18.29.106
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame5
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame6
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame7
+    server: 104.19.185.16
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame8
+    server: 104.19.142.89
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame9
+    server: 104.19.142.108
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame10
+    server: 104.18.21.219
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame11
+    server: 104.18.30.102
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame12
+    server: 104.18.20.94
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame13
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pb.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame14
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sp1.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame15
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: server.pubgmobile.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame16
+    server: 172.67.73.5
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: akmpicture.youngjoygame.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID axisgame17
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame1
+    server: 172.67.6.144
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame2
+    server: 104.16.108.96
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame3
+    server: 162.159.136.54
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame4
+    server: 104.18.29.106
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame5
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame6
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame7
+    server: 104.19.185.16
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame8
+    server: 104.19.142.89
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame9
+    server: 104.19.142.108
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame10
+    server: 104.18.21.219
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame11
+    server: 104.18.30.102
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame12
+    server: 104.18.20.94
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame13
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: pb.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame14
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sp1.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame15
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: server.pubgmobile.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame16
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: akmpicture.youngjoygame.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG axisgame17
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb1
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.facebook.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb2
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: play.mobilelegends.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb3
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: layanan.ruangguru.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb4
+    server: 104.26.7.171
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb6
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID xledufb7
+    server: 162.159.130.11
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb1
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.facebook.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb2
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: play.mobilelegends.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb3
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: layanan.ruangguru.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb4
+    server: 104.26.7.171
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb5
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb6
+    server: 104.16.53.111
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG xledufb7
+    server: 162.159.130.11
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩ID wifi.id
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬SG wifi.id
+    server: 104.18.3.2
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu1
+    server: 104.16.51.111
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu2
+    server: 104.16.226.91
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu3
+    server: 104.18.160.90
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu4
+    server: 104.17.70.206
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu5
+    server: 104.18.25.139
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu6
+    server: 141.193.213.20
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu7
+    server: 170.114.52.2
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu8
+    server: 141.193.213.10
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu9
+    server: 162.159.135.42
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu10
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu11
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu12
+    server: 104.20.75.141
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu13
+    server: 104.26.10.155
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu14
+    server: 172.67.28.22
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇮🇩 isatedu15
+    server: id-full.privateip.net
+    port: 443
+    type: vless
+    uuid: ca6903ba-bbef-47e2-b606-963b6ebd45d0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.opensignal.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: id-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu1
+    server: 104.16.51.111
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu2
+    server: 104.16.226.91
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu3
+    server: 104.18.160.90
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu4
+    server: 104.17.70.206
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu5
+    server: 104.18.25.139
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu6
+    server: 141.193.213.20
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu7
+    server: 170.114.52.2
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu8
+    server: 141.193.213.10
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu9
+    server: 162.159.135.42
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu10
+    server: 162.159.128.7
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu11
+    server: 162.159.138.6
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu12
+    server: 104.20.75.141
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu13
+    server: 104.26.10.155
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu14
+    server: 172.67.28.22
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-full.privateip.net
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 🇸🇬 isatedu15
+    server: sg-full.privateip.net
+    port: 443
+    type: vless
+    uuid: 58457395-a933-4d17-b87b-ad6aa08b8ab9
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: www.opensignal.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-full.privateip.net
+    udp: true
+  - name: 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+    server: 118.98.44.10
+    port: 443
+    type: vless
+    uuid: ad591077-cfe8-402b-8e4c-134695416558
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: one.one.one.one
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: one.one.one.one
+    udp: true
+proxy-groups:
+  - name: ANCESTRAL-SCIENCE
+    type: select
+    proxies:
+      - AUTO⚡SERVER
+      - wifi.id
+      - ISAT-EDU
+      - XL-EDUFB
+      - AXIS-GAME
+      - TSEL-ILPED
+      - XL-VISION
+      - CONFR-IFLIX
+  - name: AUTO⚡SERVER
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID wifi.id
+      - 🇸🇬SG wifi.id
+      - 🇮🇩 isatedu1
+      - 🇮🇩 isatedu2
+      - 🇮🇩 isatedu3
+      - 🇮🇩 isatedu4
+      - 🇮🇩 isatedu5
+      - 🇮🇩 isatedu6
+      - 🇮🇩 isatedu7
+      - 🇮🇩 isatedu8
+      - 🇮🇩 isatedu9
+      - 🇮🇩 isatedu10
+      - 🇮🇩 isatedu11
+      - 🇮🇩 isatedu12
+      - 🇮🇩 isatedu13
+      - 🇮🇩 isatedu14
+      - 🇮🇩 isatedu15
+      - 🇸🇬 isatedu1
+      - 🇸🇬 isatedu2
+      - 🇸🇬 isatedu3
+      - 🇸🇬 isatedu4
+      - 🇸🇬 isatedu5
+      - 🇸🇬 isatedu6
+      - 🇸🇬 isatedu7
+      - 🇸🇬 isatedu8
+      - 🇸🇬 isatedu9
+      - 🇸🇬 isatedu10
+      - 🇸🇬 isatedu11
+      - 🇸🇬 isatedu12
+      - 🇸🇬 isatedu13
+      - 🇸🇬 isatedu14
+      - 🇸🇬 isatedu15
+      - 🇮🇩ID xledufb1
+      - 🇮🇩ID xledufb2
+      - 🇮🇩ID xledufb3
+      - 🇮🇩ID xledufb4
+      - 🇮🇩ID xledufb5
+      - 🇮🇩ID xledufb6
+      - 🇮🇩ID xledufb7
+      - 🇸🇬SG xledufb1
+      - 🇸🇬SG xledufb2
+      - 🇸🇬SG xledufb3
+      - 🇸🇬SG xledufb4
+      - 🇸🇬SG xledufb5
+      - 🇸🇬SG xledufb6
+      - 🇸🇬SG xledufb7
+      - 🇸🇬SG axisgame1
+      - 🇸🇬SG axisgame2
+      - 🇸🇬SG axisgame3
+      - 🇸🇬SG axisgame4
+      - 🇸🇬SG axisgame5
+      - 🇸🇬SG axisgame6
+      - 🇸🇬SG axisgame7
+      - 🇸🇬SG axisgame8
+      - 🇸🇬SG axisgame9
+      - 🇸🇬SG axisgame10
+      - 🇸🇬SG axisgame11
+      - 🇸🇬SG axisgame12
+      - 🇸🇬SG axisgame13
+      - 🇸🇬SG axisgame14
+      - 🇸🇬SG axisgame15
+      - 🇸🇬SG axisgame16
+      - 🇸🇬SG axisgame17
+      - 🇮🇩ID axisgame1
+      - 🇮🇩ID axisgame2
+      - 🇮🇩ID axisgame3
+      - 🇮🇩ID axisgame4
+      - 🇮🇩ID axisgame5
+      - 🇮🇩ID axisgame6
+      - 🇮🇩ID axisgame7
+      - 🇮🇩ID axisgame8
+      - 🇮🇩ID axisgame9
+      - 🇮🇩ID axisgame10
+      - 🇮🇩ID axisgame11
+      - 🇮🇩ID axisgame12
+      - 🇮🇩ID axisgame13
+      - 🇮🇩ID axisgame14
+      - 🇮🇩ID axisgame15
+      - 🇮🇩ID axisgame16
+      - 🇮🇩ID axisgame17
+      - 🇮🇩ID tselilped1
+      - 🇮🇩ID tselilped2
+      - 🇮🇩ID tselilped3
+      - 🇮🇩ID tselilped4
+      - 🇮🇩ID tselilped5
+      - 🇮🇩ID tselilped6
+      - 🇸🇬SG tselilped1
+      - 🇸🇬SG tselilped2
+      - 🇸🇬SG tselilped3
+      - 🇸🇬SG tselilped4
+      - 🇸🇬SG tselilped5
+      - 🇸🇬SG tselilped6
+      - 🇮🇩ID xlvision1
+      - 🇮🇩ID xlvision2
+      - 🇮🇩ID xlvision3
+      - 🇮🇩ID xlvision4
+      - 🇮🇩ID xlvision5
+      - 🇮🇩ID xlvision6
+      - 🇮🇩ID xlvision7
+      - 🇮🇩ID xlvision8
+      - 🇮🇩ID xlvision9
+      - 🇮🇩ID xlvision10
+      - 🇮🇩ID xlvision11
+      - 🇮🇩ID xlvision12
+      - 🇮🇩ID xlvision13
+      - 🇮🇩ID xlvision14
+      - 🇮🇩ID xlvision15
+      - 🇮🇩ID xlvision16
+      - 🇮🇩ID xlvision17
+      - 🇮🇩ID xlvision18
+      - 🇸🇬SG xlvision1
+      - 🇸🇬SG xlvision2
+      - 🇸🇬SG xlvision3
+      - 🇸🇬SG xlvision4
+      - 🇸🇬SG xlvision5
+      - 🇸🇬SG xlvision6
+      - 🇸🇬SG xlvision7
+      - 🇸🇬SG xlvision8
+      - 🇸🇬SG xlvision9
+      - 🇸🇬SG xlvision10
+      - 🇸🇬SG xlvision11
+      - 🇸🇬SG xlvision12
+      - 🇸🇬SG xlvision13
+      - 🇸🇬SG xlvision14
+      - 🇸🇬SG xlvision15
+      - 🇸🇬SG xlvision16
+      - 🇸🇬SG xlvision17
+      - 🇸🇬SG xlvision18
+      - 🇮🇩ID conf+iflix1
+      - 🇮🇩ID conf+iflix2
+      - 🇮🇩ID conf+iflix3
+      - 🇮🇩ID conf+iflix4
+      - 🇮🇩ID conf+iflix5
+      - 🇮🇩ID conf+iflix6
+      - 🇮🇩ID conf+iflix7
+      - 🇮🇩ID conf+iflix8
+      - 🇮🇩ID conf+iflix9
+      - 🇮🇩ID conf+iflix10
+      - 🇸🇬SG conf+iflix1
+      - 🇸🇬SG conf+iflix2
+      - 🇸🇬SG conf+iflix3
+      - 🇸🇬SG conf+iflix4
+      - 🇸🇬SG conf+iflix5
+      - 🇸🇬SG conf+iflix6
+      - 🇸🇬SG conf+iflix7
+      - 🇸🇬SG conf+iflix8
+      - 🇸🇬SG conf+iflix9
+      - 🇸🇬SG conf+iflix10
+  - name: wifi.id
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID wifi.id
+      - 🇸🇬SG wifi.id
+  - name: ISAT-EDU
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩 isatedu1
+      - 🇮🇩 isatedu2
+      - 🇮🇩 isatedu3
+      - 🇮🇩 isatedu4
+      - 🇮🇩 isatedu5
+      - 🇮🇩 isatedu6
+      - 🇮🇩 isatedu7
+      - 🇮🇩 isatedu8
+      - 🇮🇩 isatedu9
+      - 🇮🇩 isatedu10
+      - 🇮🇩 isatedu11
+      - 🇮🇩 isatedu12
+      - 🇮🇩 isatedu13
+      - 🇮🇩 isatedu14
+      - 🇮🇩 isatedu15
+      - 🇸🇬 isatedu1
+      - 🇸🇬 isatedu2
+      - 🇸🇬 isatedu3
+      - 🇸🇬 isatedu4
+      - 🇸🇬 isatedu5
+      - 🇸🇬 isatedu6
+      - 🇸🇬 isatedu7
+      - 🇸🇬 isatedu8
+      - 🇸🇬 isatedu9
+      - 🇸🇬 isatedu10
+      - 🇸🇬 isatedu11
+      - 🇸🇬 isatedu12
+      - 🇸🇬 isatedu13
+      - 🇸🇬 isatedu14
+      - 🇸🇬 isatedu15
+  - name: XL-EDUFB
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID xledufb1
+      - 🇮🇩ID xledufb2
+      - 🇮🇩ID xledufb3
+      - 🇮🇩ID xledufb4
+      - 🇮🇩ID xledufb5
+      - 🇮🇩ID xledufb6
+      - 🇮🇩ID xledufb7
+      - 🇸🇬SG xledufb1
+      - 🇸🇬SG xledufb2
+      - 🇸🇬SG xledufb3
+      - 🇸🇬SG xledufb4
+      - 🇸🇬SG xledufb5
+      - 🇸🇬SG xledufb6
+      - 🇸🇬SG xledufb7
+  - name: AXIS-GAME
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID axisgame1
+      - 🇮🇩ID axisgame2
+      - 🇮🇩ID axisgame3
+      - 🇮🇩ID axisgame4
+      - 🇮🇩ID axisgame5
+      - 🇮🇩ID axisgame6
+      - 🇮🇩ID axisgame7
+      - 🇮🇩ID axisgame8
+      - 🇮🇩ID axisgame9
+      - 🇮🇩ID axisgame10
+      - 🇮🇩ID axisgame11
+      - 🇮🇩ID axisgame12
+      - 🇮🇩ID axisgame13
+      - 🇮🇩ID axisgame14
+      - 🇮🇩ID axisgame15
+      - 🇮🇩ID axisgame16
+      - 🇮🇩ID axisgame17
+      - 🇸🇬SG axisgame1
+      - 🇸🇬SG axisgame2
+      - 🇸🇬SG axisgame3
+      - 🇸🇬SG axisgame4
+      - 🇸🇬SG axisgame5
+      - 🇸🇬SG axisgame6
+      - 🇸🇬SG axisgame7
+      - 🇸🇬SG axisgame8
+      - 🇸🇬SG axisgame9
+      - 🇸🇬SG axisgame10
+      - 🇸🇬SG axisgame11
+      - 🇸🇬SG axisgame12
+      - 🇸🇬SG axisgame13
+      - 🇸🇬SG axisgame14
+      - 🇸🇬SG axisgame15
+      - 🇸🇬SG axisgame16
+      - 🇸🇬SG axisgame17
+  - name: XL-VISION
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID xlvision1
+      - 🇮🇩ID xlvision2
+      - 🇮🇩ID xlvision3
+      - 🇮🇩ID xlvision4
+      - 🇮🇩ID xlvision5
+      - 🇮🇩ID xlvision6
+      - 🇮🇩ID xlvision7
+      - 🇮🇩ID xlvision8
+      - 🇮🇩ID xlvision9
+      - 🇮🇩ID xlvision10
+      - 🇮🇩ID xlvision11
+      - 🇮🇩ID xlvision12
+      - 🇮🇩ID xlvision13
+      - 🇮🇩ID xlvision14
+      - 🇮🇩ID xlvision15
+      - 🇮🇩ID xlvision16
+      - 🇮🇩ID xlvision17
+      - 🇮🇩ID xlvision18
+      - 🇸🇬SG xlvision1
+      - 🇸🇬SG xlvision2
+      - 🇸🇬SG xlvision3
+      - 🇸🇬SG xlvision4
+      - 🇸🇬SG xlvision5
+      - 🇸🇬SG xlvision6
+      - 🇸🇬SG xlvision7
+      - 🇸🇬SG xlvision8
+      - 🇸🇬SG xlvision9
+      - 🇸🇬SG xlvision10
+      - 🇸🇬SG xlvision11
+      - 🇸🇬SG xlvision12
+      - 🇸🇬SG xlvision13
+      - 🇸🇬SG xlvision14
+      - 🇸🇬SG xlvision15
+      - 🇸🇬SG xlvision16
+      - 🇸🇬SG xlvision17
+      - 🇸🇬SG xlvision18
+  - name: TSEL-ILPED
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID tselilped1
+      - 🇮🇩ID tselilped2
+      - 🇮🇩ID tselilped3
+      - 🇮🇩ID tselilped4
+      - 🇮🇩ID tselilped5
+      - 🇮🇩ID tselilped6
+      - 🇸🇬SG tselilped1
+      - 🇸🇬SG tselilped2
+      - 🇸🇬SG tselilped3
+      - 🇸🇬SG tselilped4
+      - 🇸🇬SG tselilped5
+      - 🇸🇬SG tselilped6
+  - name: CONFR-IFLIX
+    type: url-test
+    strategy: consistent-hashing
+    url: http://cp.cloudflare.com
+    interval: 60
+    tolerance: 20
+    proxies:
+      - 𝕎𝕒𝕚𝕥•••𝟙𝟘𝕤
+      - 🇮🇩ID conf+iflix1
+      - 🇮🇩ID conf+iflix2
+      - 🇮🇩ID conf+iflix3
+      - 🇮🇩ID conf+iflix4
+      - 🇮🇩ID conf+iflix5
+      - 🇮🇩ID conf+iflix6
+      - 🇮🇩ID conf+iflix7
+      - 🇮🇩ID conf+iflix8
+      - 🇮🇩ID conf+iflix9
+      - 🇮🇩ID conf+iflix10
+      - 🇸🇬SG conf+iflix1
+      - 🇸🇬SG conf+iflix2
+      - 🇸🇬SG conf+iflix3
+      - 🇸🇬SG conf+iflix4
+      - 🇸🇬SG conf+iflix5
+      - 🇸🇬SG conf+iflix6
+      - 🇸🇬SG conf+iflix7
+      - 🇸🇬SG conf+iflix8
+      - 🇸🇬SG conf+iflix9
+      - 🇸🇬SG conf+iflix10
+rules:
+  - MATCH,ANCESTRAL-SCIENCE
